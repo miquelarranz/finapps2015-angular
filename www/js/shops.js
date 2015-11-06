@@ -1,10 +1,6 @@
 angular.module('starter.controllers', [])
+    
+.controller('ShopsCtrl', function($scope, Shops) {
 
-.controller('ChatsCtrl', function($scope, Chats) {
-
-  $scope.chats = Chats.all();
-
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
+  $scope.shops = Shops.all();
 })
