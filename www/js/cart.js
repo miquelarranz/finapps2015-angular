@@ -1,8 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('ChatsCtrl', function($scope, Chats) {
-
-  $scope.chats = Chats.all();
+.controller('CartCtrl', function($scope) {
 
   $scope.remove = function(chat) {
     Chats.remove(chat);
