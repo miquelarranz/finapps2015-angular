@@ -45,9 +45,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/shops',
     templateUrl: 'templates/shops.html',
     controller: 'ShopsCtrl'
+  })
+
+  .state('shop-products', {
+    url: '/shops/:shopId/products',
+    templateUrl: 'templates/product.html',
+    controller: 'ProductsCtrl'
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/login');
+  $urlRouterProvider.otherwise('/shops');
 
 });
