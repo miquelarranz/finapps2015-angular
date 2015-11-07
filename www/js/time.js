@@ -1,10 +1,18 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers')
 
-.controller('ChatsCtrl', function($scope, Chats) {
+.controller('TimeCtrl', function($rootScope, $scope, $state) {
 
-  $scope.chats = Chats.all();
-      
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
+        $scope.time = new Date();
+        $scope.hour = 0;
+        $scope.minutes = 0;
+        $scope.seconds = 0;
+
+      $scope.ok = function() {
+        $rootScope.time = $scope.time;
+        $rootScope.hour = $scope.hour;
+        $rootScope.minutes = $scope.minutes;
+        $rootScope.seconds = $scope.seconds;
+        $state.go("payment");
+      }
+
 })

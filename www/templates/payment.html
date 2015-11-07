@@ -1,0 +1,29 @@
+<ion-view view-title="Introduce your card credentials">
+  <ion-content class="padding" style="padding-top: 40px">
+    <div style="text-align: center; padding-top: 20px; padding-bottom: 30px;">
+      <img src="img/payment.png" style="width: 50%">
+    </div>
+    <div style="padding-top: 16px" class="list padding">
+      <label style="border-left: 0px; border-right: 0px; border-top: 0px;" class="item item-input">
+        <span class="input-label">Card number</span>
+        <input style="text-align:right" type="text" ng-model="card">
+        <i class="icon ion-card" style=" margin-right: 25px"></i>
+      </label>
+      <label  style="border-left: 0px; border-right: 0px;" class="item item-input">
+        <span class="input-label">Expiration date</span>
+        <input style="text-align:right" type="text" ng-model="date">
+        <i class="icon ion-ios-clock" style=" margin-right: 30px; padding-left: 1px"></i>
+      </label>
+      <label  style="border-left: 0px; border-right: 0px;" class="item item-input">
+        <span class="input-label">CVV</span>
+        <input style="text-align:right" type="text" ng-model="CVV">
+        <i class="icon ion-key" style=" margin-right: 48px; padding-left: 5px"></i>
+      </label>
+    </div>
+    <div class="padding">
+      <a class="button button-block button-positive" href="#/ok">
+        Pay!
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

@@ -48,6 +48,30 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller: 'ShopsCtrl'
   })
 
+  .state('time', {
+    url: '/time',
+    templateUrl: 'templates/time.html',
+    controller: 'TimeCtrl'
+  })
+
+  .state('payment', {
+    url: '/payment',
+    templateUrl: 'templates/payment.html',
+    controller: 'PaymentCtrl'
+  })
+
+  .state('ok', {
+    url: '/ok',
+    templateUrl: 'templates/ok.html',
+    controller: 'OkCtrl'
+  })
+
+  .state('collect', {
+    url: '/collect',
+    templateUrl: 'templates/collect.html',
+    controller: 'CollectCtrl'
+  })
+
   .state('shop-products', {
     url: '/shops/:shopId/products',
     templateUrl: 'templates/product.html',
@@ -61,6 +85,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/login');
+  $urlRouterProvider.otherwise('/time');
 
 });
