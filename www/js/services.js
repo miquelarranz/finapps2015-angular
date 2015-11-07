@@ -130,6 +130,65 @@ angular.module('starter.services')
     },
     get: function(shopId) {
       return products[shopId];
+    },
+    getProduct: function(shopId, prodId) {
+      var productList = products[shopId];
+      for (var i = 0; i < productList.length; i++) {
+        if (productList[i].id === parseInt(prodId)) {
+          return productList[i];
+        }
+      }
+      return null;
+    }
+  };
+})
+
+.factory('Cart', function() {
+  // Might use a resource here that returns a JSON array
+
+  // Some fake testing data
+  var cart = [];
+  var items = 0;
+
+  return {
+    all: function() {
+      return cart;
+    },
+    remove: function(product) {
+      items--;
+      for (var i = cart.length - 1; i >= 0; i--) {
+        if (cart[i].name == product.name) {
+          if (cart[i].quantity == 1) {
+            cart.splice(cart.indexOf(product), 1);
+          }
+          else {
+            cart[i].quantity--;
+          }
+          return;
+        }
+      }
+    },
+    add: function(product) {
+      items++;
+      for (var i = cart.length - 1; i >= 0; i--) {
+        if (cart[i].name == product.name) {
+          cart[i].quantity++;
+          return;
+        }
+      }
+      product.quantity = 1;
+      cart.push(product);
+    },
+    getItems: function() {
+      return items;
+    },
+    get: function(shopId) {
+      for (var i = 0; i < shops.length; i++) {
+        if (shops[i].id === parseInt(shopId)) {
+          return shops[i];
+        }
+      }
+      return null;
     }
   };
 });

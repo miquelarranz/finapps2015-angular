@@ -1,11 +1,15 @@
 <ion-view view-title='{{shop.name}}'>
+  <ion-nav-buttons side="right">
+      <i class="ion-ios-cart-outline icon" ng-click="goToCart()" style="font-size: 35px;">
+      </i>{{items}}
+    </ion-nav-buttons>
   <ion-content>
     <ion-list>
-      <ion-item class="item-avatar item-icon-right" ng-repeat="product in products" type="item-text-wrap" href="#/shops/{{product.id}}">
+      <ion-item class="item-avatar item-icon-right" ng-repeat="product in products" type="item-text-wrap">
         <img ng-src="{{product.img}}">
         <h2>{{product.name}}</h2>
         <p>{{product.price}} €</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
+        <i ng-click="addProductToCart(shop.id,product.id)" class="icon ion-ios-plus-outline"></i>
       </ion-item>
     </ion-list>
   </ion-content>

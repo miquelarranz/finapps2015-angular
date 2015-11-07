@@ -52,6 +52,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/shops/:shopId/products',
     templateUrl: 'templates/product.html',
     controller: 'ProductsCtrl'
+  })
+
+  .state('cart', {
+    url: '/cart',
+    templateUrl: 'templates/cart.html',
+    controller: 'CartCtrl'
   });
 
   // if none of the above states are matched, use this as the fallback
