@@ -7,23 +7,23 @@ angular.module('starter.services')
   var shops = [
     {
       id: 0,
-      name: 'Palau Blaugrana Frankfurts 1',
+      name: 'Palau Blaugrana Frankfurts',
       location: '',
-      description: 'El lloc perfecte per menjar un frankfurt a la mitja part - Porta 1',
+      description: 'The best place to eat something fast between quarters - Gate 1',
       img: 'img/palau.jpg'
     },
     {
       id: 1,
-      name: 'Palau Blaugrana Frankfurts 2',
+      name: 'Camp Nou Bar',
       location: '',
-      description: 'El lloc perfecte per menjar un frankfurt a la mitja part - Porta 2',
+      description: 'A nice sandwich and beer at half time to fill your stomach - Gate 18',
       img: 'img/palau.jpg'
     },
     {
       id: 2,
       name: 'Zara',
       location: '',
-      description: 'Compra tu vestido preferido!',
+      description: 'Buy your clothes and pick them up instantly',
       img: 'img/zara.png'
     }
   ];
@@ -60,14 +60,14 @@ angular.module('starter.services')
     },
     {
       id: 1,
-      name: 'CocaCola',
+      name: 'Coca-Cola',
       price: 2,
-      description: 'El lloc perfecte per menjar un frankfurt a la mitja part - Porta 2',
+      //description: 'El lloc perfecte per menjar un frankfurt a la mitja part - Porta 2',
       img: 'img/cola.jpg'
     },
     {
       id: 2,
-      name: 'Estrella Damn',
+      name: 'Estrella Damm',
       price: 2.5,
       //description: 'Compra tu vestido preferido!',
       img: 'img/estrella.jpeg'
@@ -84,14 +84,14 @@ angular.module('starter.services')
     },
     {
       id: 1,
-      name: 'CocaCola',
+      name: 'Coca-Cola',
       price: 2,
       //description: 'El lloc perfecte per menjar un frankfurt a la mitja part - Porta 2',
       img: 'img/cola.jpg'
     },
     {
       id: 2,
-      name: 'Estrella Damn',
+      name: 'Estrella Damm',
       price: 2.5,
       //description: 'Compra tu vestido preferido!',
       img: 'img/estrella.jpeg'
@@ -101,21 +101,21 @@ angular.module('starter.services')
   var products2 = [
     {
       id: 0,
-      name: 'Samarreta Blanca',
+      name: 'White T-Shirt',
       price: 10,
       //description: 'El lloc perfecte per menjar un frankfurt a la mitja part - Porta 1',
       img: 'img/white-shirt.jpeg'
     },
     {
       id: 1,
-      name: 'Mitjons',
+      name: 'Socks',
       price: 2,
       //description: 'El lloc perfecte per menjar un frankfurt a la mitja part - Porta 2',
       img: 'img/mitjons.jpg'
     },
     {
       id: 2,
-      name: 'Camisa',
+      name: 'Shirt',
       price: 23,
       //description: 'Compra tu vestido preferido!',
       img: 'img/camisa.jpg'
