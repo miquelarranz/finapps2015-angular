@@ -1,6 +1,5 @@
-angular.module('starter.controllers', [])
-    
-.controller('ShopsCtrl', function($scope, Shops) {
+angular.module('starter.controllers')
 
-  $scope.shops = Shops.all();
-})
+    .controller('ShopsCtrl', function($scope, Shops) {
+      $scope.shops = Shops.all();
+    })
