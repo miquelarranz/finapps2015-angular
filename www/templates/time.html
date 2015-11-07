@@ -4,26 +4,35 @@
     <div style="padding-top: 16px" class="list padding">
       <label style="border-left: 0px; border-right: 0px; border-top: 0px; padding-bottom: 10px; padding-top: 20px" class="item item-input">
         <span class="input-label">Date</span>
-        <input type="date" placeholder="Select a date..." ng-model="time">
+        <input disabled="{{asap}}" type="date" placeholder="Select a date..." ng-model="time">
       </label>
       <div style="border-left: 0px; border-right: 0px; border-top: 0px" class="item range range-positive">
         <span class="input-label">Hour</span>
-        <input type="range" name="volume" min="0" max="23" value="0" ng-model="hour">
+        <input ngDisabled="{{asap}}" type="range" name="volume" min="0" max="23" value="0" ng-model="hour">
         <span class="input-label">{{hour}}</span>
       </div>
       <div style="border-left: 0px; border-right: 0px; border-top: 0px" class="item range range-positive">
         <span class="input-label">Minutes</span>
-        <input type="range" name="volume" min="0" max="59" value="0" ng-model="minutes">
+        <input ngDisabled="{{asap}}" type="range" name="volume" min="0" max="59" value="0" ng-model="minutes">
         <span class="input-label">{{minutes}}</span>
       </div>
-      <div style="border-left: 0px; border-right: 0px; border-top: 0px; padding-bottom: 40px" class="item range range-positive">
+      <div style="border-left: 0px; border-right: 0px; border-top: 0px;" class="item range range-positive">
         <span class="input-label">Seconds</span>
-        <input type="range" name="volume" min="0" max="59" value="0" ng-model="seconds">
+        <input ngDisabled="{{asap}}" type="range" name="volume" min="0" max="59" value="0" ng-model="seconds">
         <span class="input-label">{{seconds}}</span>
+      </div>
+      <div style="border-left: 0px; border-right: 0px; border-top: 0px; padding-bottom: 20px" class="item">
+        <span class="input-label">As soon as possible</span>
+        <label class="toggle" style="position:absolute;top: 12px;right: 30px;">
+           <input type="checkbox" ng-model="asap">
+           <div class="track">
+             <div class="handle"></div>
+           </div>
+        </label>
       </div>
     </div>
     <div class="padding">
-      <a ng-click="ok()" class="button button-block button-positive">
+      <a ng-click="ok()" class="button button-block button-balanced">
         Checkout
       </a>
     </div>

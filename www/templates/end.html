@@ -1,14 +1,10 @@
-cart.html<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
-<ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
+<ion-view hide-back-button="true">
+  <ion-content class="padding" style="padding-top: 40px; text-align: center">
+    <i class="ion-ios-checkmark-outline ion" style="color: green; font-weight: bold; font-size: 200px"></i>
+    <h4 style="padding: 50px">Thank you and enjoy!</h4>
+    <a class="button button-block button-balanced" style="margin-left: 30px; margin-right: 30px;" href="#/shops">
+      End
+    </a>
   </ion-content>
 </ion-view>
+
