@@ -1,6 +1,6 @@
 angular.module('starter.controllers')
 
-.controller('CartCtrl', function($scope, Cart, Products, Shops) {
+.controller('CartCtrl', function($scope, $state, Cart, Products, Shops) {
 
 	$scope.products = Cart.all();
 	$scope.total;
