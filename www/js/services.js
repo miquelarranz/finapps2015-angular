@@ -56,7 +56,7 @@ angular.module('starter.services')
       name: 'Frankfurt',
       price: 3,
       //description: 'El lloc perfecte per menjar un frankfurt a la mitja part - Porta 1',
-      img: 'img/frankfurt.jpg'
+      img: 'img/frankfurt.png'
     },
     {
       id: 1,
@@ -70,7 +70,7 @@ angular.module('starter.services')
       name: 'Estrella Damn',
       price: 2.5,
       //description: 'Compra tu vestido preferido!',
-      img: 'img/estrella.png'
+      img: 'img/estrella.jpeg'
     }
   ];
 
@@ -80,7 +80,7 @@ angular.module('starter.services')
       name: 'Frankfurt',
       price: 3,
       //description: 'El lloc perfecte per menjar un frankfurt a la mitja part - Porta 1',
-      img: 'img/frankfurt.jpg'
+      img: 'img/frankfurt.png'
     },
     {
       id: 1,
@@ -94,7 +94,7 @@ angular.module('starter.services')
       name: 'Estrella Damn',
       price: 2.5,
       //description: 'Compra tu vestido preferido!',
-      img: 'img/estrella.png'
+      img: 'img/estrella.jpeg'
     }
   ];
 
@@ -104,7 +104,7 @@ angular.module('starter.services')
       name: 'Samarreta Blanca',
       price: 10,
       //description: 'El lloc perfecte per menjar un frankfurt a la mitja part - Porta 1',
-      img: 'img/white-shirt.jpg'
+      img: 'img/white-shirt.jpeg'
     },
     {
       id: 1,
@@ -118,7 +118,7 @@ angular.module('starter.services')
       name: 'Camisa',
       price: 23,
       //description: 'Compra tu vestido preferido!',
-      img: 'img/camisa.png'
+      img: 'img/camisa.jpg'
     }
   ];
 

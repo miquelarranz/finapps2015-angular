@@ -4,12 +4,12 @@
       <ion-item class="item-avatar item-icon-right" ng-repeat="product in products" type="item-text-wrap">
         <img ng-src="{{product.img}}">
         <h2>{{product.name}}</h2>
-        <p>{{product.price}} x {{product.quantity}} = {{product.price*product.quantity}} €</p>
+        <p>{{product.price}} x {{product.quantity}} = {{product.price*product.quantity}}€</p>
         <i ng-click="addProductToCart(product)" class="icon ion-ios-plus-outline" style="right:51px;"></i>
         <i ng-click="removeProductToCart(product)" class="icon ion-ios-minus-outline"></i>
       </ion-item>
     </ion-list>
-    <div style="text-align:center"> Total : {{total}} </div>
+    <div style="text-align:center;font-size: 30px;line-height:55px;"> Total : {{total}}€ </div>
   </ion-content>
   <div class="bar bar-footer bar-balanced">
     <div class="title" ng-click="timeGo()">Proceed to payment!</div>
