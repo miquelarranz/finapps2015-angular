@@ -13,3 +13,5 @@ npm-debug.log
 resources/signing
 
 /.idea
+
+/bower_components

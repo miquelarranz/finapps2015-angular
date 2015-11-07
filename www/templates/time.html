@@ -1,14 +1,31 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
-<ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
+<ion-view view-title="Select a pick up date">
+  <ion-content class="padding" style="text-align: center; padding-top: 40px">
+    <i class="icon ion-clock " style="color: grey; font-size: 80px;"></i>
+    <div style="padding-top: 16px" class="list padding">
+      <label style="border-left: 0px; border-right: 0px; border-top: 0px; padding-bottom: 10px; padding-top: 20px" class="item item-input">
+        <span class="input-label">Date</span>
+        <input type="date" placeholder="Select a date..." ng-model="time">
+      </label>
+      <div style="border-left: 0px; border-right: 0px; border-top: 0px" class="item range range-positive">
+        <span class="input-label">Hour</span>
+        <input type="range" name="volume" min="0" max="23" value="0" ng-model="hour">
+        <span class="input-label">{{hour}}</span>
+      </div>
+      <div style="border-left: 0px; border-right: 0px; border-top: 0px" class="item range range-positive">
+        <span class="input-label">Minutes</span>
+        <input type="range" name="volume" min="0" max="59" value="0" ng-model="minutes">
+        <span class="input-label">{{minutes}}</span>
+      </div>
+      <div style="border-left: 0px; border-right: 0px; border-top: 0px; padding-bottom: 40px" class="item range range-positive">
+        <span class="input-label">Seconds</span>
+        <input type="range" name="volume" min="0" max="59" value="0" ng-model="seconds">
+        <span class="input-label">{{seconds}}</span>
+      </div>
+    </div>
+    <div class="padding">
+      <a ng-click="ok()" class="button button-block button-positive">
+        Checkout
+      </a>
+    </div>
   </ion-content>
 </ion-view>
